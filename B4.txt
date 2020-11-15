@@ -1,0 +1,62 @@
+flux = stream
+
+ standard input  - stdin
+ standard output - stdout
+ standard error  - stderr
+
+B4_0
+ 1. telechrager mon script B4_0.sh :
+ > wget ... TODO
+
+ 2. lancer ce script
+ > bash nom_du_script.sh
+ (il va créer un dossier mon_bureau)
+
+ 3. étudier le contenu de mon_bureau en utilisant cd et ls (ou tree) 
+
+maintenant on va ranger...
+
+ 4. mettre tous les fichiers avec l'extension .txt dans le txt-TIRROIR [avec mv]
+ 
+    exemples d'utilisation de mv :
+    	> mv nom_de_fichier dossier_de_destination
+	> mv nom_de_fichier1 nom_de_fichier2 ... nom_de_fichierN dossier_de_destination
+	
+    pour afficher tous les fichier nommés "nom_de_fichier" dans tous les sous-dosiers : 
+        > ls */nom_de_fichier"
+	
+ 5. faire pareil pour .pdf et .sh
+ 6. creer un dossier GRAND_TIROIR dans mon_bureau	
+ 7. deplacer dans GRAND_TIROIR tous les dossiers et fichiers dans mon_bureau sauf ceux qui commencent out terminent avec "TIROIR"
+
+    * remplace une chaîne de caractères
+    ? remplace un n'importe quel caractère 
+    [^x] remplace un n'importe quel caractère sauf "x"
+    [^acbdef] remplace une n'importe quelle chaîne de caractères sauf "abcdef"
+
+    pour afficher tous les fichiers dont nom ne commence pas par "bad" :     
+        > ls [^bad]*"
+	
+ 8. supprimer tous les dossiers dans GRAND_TIROIR qui contiennent "sa" ou "le"  
+ 9. m'envoyer une capture d'écran avec vos commandes dans le terminal (ou le code du script)
+
+B4_1
+strace echo "Hello world"
+strace -e trace=write echo "Hello world"
+
+B4_2
+Écrire un script qui 
+ 1. écrit la première ligne du fichier "le_fichier.txt" dans le fichier first.txt (après ça, first.txt contient que la première ligne du fichier "le_fichier.txt") [avec head]
+ pour afficher 13 premiers lignes du fichier (pareil pour les dernières mais avec "tail"):
+    > head -n 13 fichier
+ 2. écrit les 10 dernières lignes du fichier "le_fichier.txt" dans le fichier 10last.txt (après ça, 10last.txt contient que les 10 dernières lignes du fichier "le_fichier.txt") [avec tail]
+ 3. ajoute les 3 premières lignes du fichier "le_fichier.txt" dans le fichier add_3first.txt [avec head]
+ 4. ajoute les 5 dernières lignes du fichier "le_fichier.txt" dans le fichier add_5last.txt [avec tail]
+ 5. ajoute l'erreur produit par la commande "head -n 1 error.txt le_fichier.txt " dans le fichier "error.txt" et le resultat -- dans "last.txt"		
+ 6. télécharger le fichier TODO: wget 
+ 7. lancer le script 5 fois dans le même dossier. Combien de lignes contiennent first.txt, 10last.txt, add_3first.txt, add_5last.txt, error.txt et last.txt ?
+ 8. m'envoyer une capture d'écran avec le code du script
+
+B4_3
+
+
